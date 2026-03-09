@@ -56,7 +56,7 @@ jobs:
         run: echo "BUILDKIT_VERSION=$(cat ./Dockerfile | sed -nr 's/ARG BUILDKIT_VERSION=(.*)/\1/p')" >> $GITHUB_ENV
 
       - name: Build and push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           platforms: linux/arm64,linux/amd64
