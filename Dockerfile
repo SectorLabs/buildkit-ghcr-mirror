@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # renovate: datasource=github-releases depName=moby/buildkit
-ARG BUILDKIT_VERSION=0.34.2
+ARG BUILDKIT_VERSION=0.35.0
 
 FROM moby/buildkit:v${BUILDKIT_VERSION}
 
